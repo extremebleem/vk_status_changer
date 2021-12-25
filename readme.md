@@ -2,4 +2,4 @@
 ## Описание
 + По-умолчанию активируется счетчик дней до нового года, но вы можете кастомизировать это всё
 ## Зависимости 
-+ [VK API](https://github.com/extremebleem/simple_vk_api)
++ [SIMPLE VK API](https://github.com/extremebleem/simple_vk_api)
