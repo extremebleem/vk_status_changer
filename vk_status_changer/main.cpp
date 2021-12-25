@@ -51,15 +51,17 @@ void getStatusString(std::stringstream& stringStream)
 {
 	time_t currentTime;
 	tm newYear = { 0 };
-
-	newYear.tm_year = 2021 - 1900;
+	
+	
+	time(&currentTime);
+	newYear = localtime(&currentTime);
+	
+	newYear.tm_year += 1;
 	newYear.tm_mon = 11;
 	newYear.tm_mday = 31;
 	newYear.tm_hour = 23;
 	newYear.tm_min = 59;
 	newYear.tm_sec = 59;
-
-	time(&currentTime);
 
 	const double secondsUntilNewYear = std::abs(difftime(mktime(&newYear), currentTime));
 
